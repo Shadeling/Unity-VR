@@ -18,14 +18,15 @@ public class CharControl : MonoBehaviour
     void Start()
     {
         _characterController = GetComponent<CharacterController>();
-        _velosity.z = forwardSpeed*Time.deltaTime;
-        _velosity.y = -1 * gravity*Time.deltaTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(_camera.transform.rotation.eulerAngles.z > deadZoneAngle && _camera.transform.rotation.eulerAngles.z <= 180)
+        _velosity.z = forwardSpeed * Time.deltaTime;
+        _velosity.y = -1 * gravity * Time.deltaTime;
+
+        if (_camera.transform.rotation.eulerAngles.z > deadZoneAngle && _camera.transform.rotation.eulerAngles.z <= 180)
         {
             _velosity.x = _camera.transform.rotation.eulerAngles.z * -1 * Time.deltaTime * sideSpeed;
         }
