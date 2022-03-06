@@ -913,7 +913,7 @@ MonoBehaviour:
   maxHP: 100
   startHP: 100
   immunityTime: 0.5
-  hurtSound: {fileID: 0}
+  hurtSound: {fileID: 8300000, guid: 077af004ce961b741b293517804fa62c, type: 3}
 --- !u!82 &1095391729
 AudioSource:
   m_ObjectHideFlags: 0
@@ -926,7 +926,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 66bf204cfd0444940823a9560ab56c2a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.001
+  m_Volume: 0.005
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1092,9 +1092,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1cee23ef7f2aa74b9266203a5214a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 639876206}
+  pauseMenu: {fileID: 1215680477}
   gameOverWinMenu: {fileID: 4633902608576242455}
   text: {fileID: 1749790293}
+--- !u!1 &1215680477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060854630878854020, guid: 7952eabedc8b7844da244993a3c1851e,
+    type: 3}
+  m_PrefabInstance: {fileID: 881105858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1216329401 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8443633384290099740, guid: abd5d25c2acebab4dbeb19efabc3476a,
@@ -1492,7 +1498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11402434, guid: 19c8553b5dfb1f146a574daa513943f8, type: 3}
       propertyPath: lookToPressTime
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19c8553b5dfb1f146a574daa513943f8, type: 3}

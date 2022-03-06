@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: 11___Default
   m_Shader: {fileID: 4800000, guid: e1f50dc041f1545edbb228f8daea22a1, type: 3}
   m_ShaderKeywords: 
@@ -25,6 +26,6 @@ Material:
     m_Floats:
     - _Shininess: 0.10000002
     m_Colors:
-    - _Color: {r: 0.24929716, g: 0.6397059, b: 0.6235511, a: 0.5254902}
+    - _Color: {r: 0.24929716, g: 0.6397059, b: 0.6235511, a: 0.12156863}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 0}

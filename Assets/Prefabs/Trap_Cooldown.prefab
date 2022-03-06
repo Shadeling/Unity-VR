@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 268535536279683009}
   - component: {fileID: 268535536282517409}
   - component: {fileID: 268535536281582049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trap_Needle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 268535536279683013}
   - component: {fileID: 268535536273797345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trap_Cooldown
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 268535536285762465}
   - component: {fileID: 4838683791848835640}
   - component: {fileID: 3138029530061460859}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Needle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

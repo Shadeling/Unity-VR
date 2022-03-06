@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4041558508300116527}
   - component: {fileID: 4041558508314273775}
   - component: {fileID: 4041558508315356687}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eff_Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4749,7 +4749,7 @@ GameObject:
   - component: {fileID: 4041558508305566973}
   - component: {fileID: 949699063131989040}
   - component: {fileID: 6944409081333071997}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pf_Trap_Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}

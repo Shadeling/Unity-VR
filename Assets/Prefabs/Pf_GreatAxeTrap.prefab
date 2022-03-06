@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3776828986088976077}
   - component: {fileID: 3137111788599929679}
   - component: {fileID: 4408286439506571163}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreatAxe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 3776828986087074989}
   - component: {fileID: 3776828986087845007}
   - component: {fileID: 3776828986088976079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreatAxeRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3776828986087074991}
   - component: {fileID: 3776828986096766685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pf_GreatAxeTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}

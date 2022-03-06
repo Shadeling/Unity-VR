@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4877995806389729892}
   - component: {fileID: 4877995806386403844}
   - component: {fileID: 4877995806387435588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AxeRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 4877995806389729894}
   - component: {fileID: 4877995806386403846}
   - component: {fileID: 4877995806387435590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 4877995806387435594}
   - component: {fileID: 8931935854336956875}
   - component: {fileID: 4364849978310214386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4877995806389729898}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AxeRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4877995806389487114}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -298,7 +298,7 @@ Transform:
   - {fileID: 4877995806389729894}
   m_Father: {fileID: 4877995806389729902}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &4877995806389487118
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4877995806389729902}
   - component: {fileID: 4877995806379488608}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pf_AxeTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,8 +324,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4877995806389487118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.3593993, y: 0.4435866, z: 4.354394}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4877995806389729898}
   m_Father: {fileID: 0}
