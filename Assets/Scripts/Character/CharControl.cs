@@ -5,10 +5,11 @@ using UnityEngine;
 public class CharControl : MonoBehaviour
 {
     [SerializeField] GameObject _camera;
-    [SerializeField] float forwardSpeed = 3;
-    [SerializeField] float sideSpeed = 2;
+    [SerializeField] float forwardSpeed = 6;
+    [SerializeField] float sideSpeed = 6;
     [SerializeField] float deadZoneAngle = 10;
     [SerializeField] float gravity = 1;
+    [SerializeField] float speedIncrease = 0.1f;
 
 
 
@@ -39,6 +40,9 @@ public class CharControl : MonoBehaviour
             _velosity.x = 0;
             _velosity.x = Input.GetAxis("Horizontal") * sideSpeed * Time.deltaTime;
         }
+
+
+        if (Time.frameCount % 128 == 0) forwardSpeed += speedIncrease;
 
         _characterController.Move(_velosity);
     }

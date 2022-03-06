@@ -876,10 +876,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 468461369}
-  forwardSpeed: 5
-  sideSpeed: 5
+  forwardSpeed: 6
+  sideSpeed: 6
   deadZoneAngle: 10
   gravity: 2
+  speedIncrease: 0.1
 --- !u!143 &1095391727
 CharacterController:
   m_ObjectHideFlags: 0
@@ -928,7 +929,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.005
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

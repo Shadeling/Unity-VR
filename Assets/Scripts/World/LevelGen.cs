@@ -36,27 +36,20 @@ public class LevelGen : MonoBehaviour
 
     private void FillStandartPlane(GameObject plane)
     {
-        int layerMask = 1 << 8;
+        //int layerMask = 1 << 8;
         Vector3 pos;
 
 
-        for (int i=0; i<4; i++)
+        for (int i=-4; i<=4; i+=2)
         {
             var enemy = Instantiate(FireTrap, plane.transform);
-            pos = new Vector3(Random.Range(-13f, 13f), 0, Random.Range(-4f, 4f));
+            pos = new Vector3(Random.Range(-13f, 13f), 0, i);
             enemy.transform.Translate(pos);
         }
-        for (int i = 0; i < 4; i++)
+        for (int i = -4; i <= 4; i+=2)
         {
             var enemy = Instantiate(SpikeTrap, plane.transform);
-            int steps = 0;
-            //do
-            //{
-                pos = new Vector3(Random.Range(-13f, 13f), 0, Random.Range(-3.5f, 3.5f));
-                steps++;
-            //}
-            //while (!Physics.CheckSphere(pos, 1, layerMask) || steps > 10);
-
+            pos = new Vector3(Random.Range(-13f, 13f), 0, i);
             enemy.transform.Translate(pos);
         }
     }
@@ -75,13 +68,6 @@ public class LevelGen : MonoBehaviour
             var enemy = Instantiate(SmallAxeTrap, plane.transform);
             enemy.transform.Translate(new Vector3(Random.Range(-12f, 12f), 0, i));
         }
-
-
-        /*var enemy1 = Instantiate(SmallAxeTrap, plane.transform);
-        var enemy2 = Instantiate(SmallAxeTrap, plane.transform);
-
-        enemy1.transform.Translate(new Vector3(4 * leftRight, 0, 5 ));
-        enemy2.transform.Translate(new Vector3(-4 * leftRight, 0, -5));*/
     }
 
     private void FillBigAxePlane(GameObject plane)
@@ -91,11 +77,6 @@ public class LevelGen : MonoBehaviour
             var enemy = Instantiate(BigAxeTrap, plane.transform);
             enemy.transform.Translate(new Vector3(Random.Range(-5f, 5f) + i , 5, 0));
         }
-
-        /*var enemy = Instantiate(BigAxeTrap, plane.transform);
-        var leftRight = Random.Range(0, 2)==0 ? 1 : -1;
-
-        enemy.transform.Translate(new Vector3(3 * leftRight, 4.5f , Random.Range(-3.5f, 3.5f) ));*/
     }
 
     private void FillEmptyPlane(GameObject plane)
