@@ -40,27 +40,19 @@ public class LevelGen : MonoBehaviour
         Vector3 pos;
 
 
-        for (int i=0; i<2; i++)
+        for (int i=0; i<4; i++)
         {
             var enemy = Instantiate(FireTrap, plane.transform);
-            int steps = 0;
-            //do
-            //{
-                pos = new Vector3(Random.Range(-3.5f, 3.5f), 0, Random.Range(-3.5f, 3.5f));
-                steps++;
-            //}
-            //while (!Physics.CheckSphere(enemy.transform.position+pos, 2) || steps>10);
-
-            Debug.Log(steps);
+            pos = new Vector3(Random.Range(-13f, 13f), 0, Random.Range(-4f, 4f));
             enemy.transform.Translate(pos);
         }
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 4; i++)
         {
             var enemy = Instantiate(SpikeTrap, plane.transform);
             int steps = 0;
             //do
             //{
-                pos = new Vector3(Random.Range(-3.5f, 3.5f), 0, Random.Range(-3.5f, 3.5f));
+                pos = new Vector3(Random.Range(-13f, 13f), 0, Random.Range(-3.5f, 3.5f));
                 steps++;
             //}
             //while (!Physics.CheckSphere(pos, 1, layerMask) || steps > 10);
@@ -78,19 +70,32 @@ public class LevelGen : MonoBehaviour
     {
         var leftRight = Random.Range(0, 2) == 0 ? 1 : -1;
 
-        var enemy1 = Instantiate(SmallAxeTrap, plane.transform);
+        for(int i = -4; i <= 4; i+=2)
+        {
+            var enemy = Instantiate(SmallAxeTrap, plane.transform);
+            enemy.transform.Translate(new Vector3(Random.Range(-12f, 12f), 0, i));
+        }
+
+
+        /*var enemy1 = Instantiate(SmallAxeTrap, plane.transform);
         var enemy2 = Instantiate(SmallAxeTrap, plane.transform);
 
         enemy1.transform.Translate(new Vector3(4 * leftRight, 0, 5 ));
-        enemy2.transform.Translate(new Vector3(-4 * leftRight, 0, -5));
+        enemy2.transform.Translate(new Vector3(-4 * leftRight, 0, -5));*/
     }
 
     private void FillBigAxePlane(GameObject plane)
     {
-        var enemy = Instantiate(BigAxeTrap, plane.transform);
+        for (int i = -5; i <= 5; i += 10)
+        {
+            var enemy = Instantiate(BigAxeTrap, plane.transform);
+            enemy.transform.Translate(new Vector3(Random.Range(-5f, 5f) + i , 5, 0));
+        }
+
+        /*var enemy = Instantiate(BigAxeTrap, plane.transform);
         var leftRight = Random.Range(0, 2)==0 ? 1 : -1;
 
-        enemy.transform.Translate(new Vector3(3 * leftRight, 4.5f , Random.Range(-3.5f, 3.5f) ));
+        enemy.transform.Translate(new Vector3(3 * leftRight, 4.5f , Random.Range(-3.5f, 3.5f) ));*/
     }
 
     private void FillEmptyPlane(GameObject plane)

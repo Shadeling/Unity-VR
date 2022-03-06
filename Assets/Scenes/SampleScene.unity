@@ -1042,8 +1042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1774688128}
-  planeCount: 8
-  distanceToGenerate: 20
+  planeCount: 10
+  distanceToGenerate: 40
 --- !u!114 &1176594232
 MonoBehaviour:
   m_ObjectHideFlags: 0
